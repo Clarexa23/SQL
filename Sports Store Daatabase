@@ -1,0 +1,33 @@
+CREATE TABLE sportstore (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, rating INTEGER, department TEXT);
+
+INSERT INTO sportstore VALUES (1, "men's running shoes", 135, 5, "shoe department");
+
+INSERT INTO sportstore VALUES (2, "women's running shoes", 157, 5, "shoe dept");
+
+INSERT INTO sportstore VALUES (3, "childrens' shoes", 65, 5, "shoe dept");
+
+INSERT INTO sportstore VALUES (4, "jacket", 45, 5, "outdoors dept");
+
+INSERT INTO sportstore VALUES (5, "football", 25, 5, "sports dept");
+
+INSERT INTO sportstore VALUES (6, "knee pads", 15, 5, "sports dept");
+
+INSERT INTO sportstore VALUES (7, "boots", 200, 5, "outdoors dept");
+
+INSERT INTO sportstore VALUES (8, "peloton", 1500, 5, "exercise dept");
+
+INSERT INTO sportstore VALUES (9, "golf clubs", 700, 5, "sports dept");
+
+INSERT INTO sportstore VALUES (10, "golf balls", 55, 5, "sports dept");
+
+INSERT INTO sportstore VALUES (11, "insulated cups", 25, 5, "camping gear dept");
+
+INSERT INTO sportstore VALUES (12, "hoodies", 15, 5, "clothing dept");
+
+INSERT INTO sportstore VALUES (13, "bicycle", 120, 5, "sports dept");
+
+INSERT INTO sportstore VALUES (14, "long sleeve shirt", 10, 5, "clothing dept");
+
+INSERT INTO sportstore VALUES (15, "mouthguard", 20, 5, "accessories dept");
+
+SELECT department, max(price) FROM sportstore GROUP BY price ascending;
